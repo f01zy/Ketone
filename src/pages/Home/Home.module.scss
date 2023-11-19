@@ -59,10 +59,13 @@
               width: calc($index * 20);
               border: 0;
               border-radius: 3px;
-              color: #fafafa;
               margin-left: 20px;
               background: #EB5757;
               font-size: calc($index * .8);
+
+              a {
+                color: #fafafa;
+              }
 
               @media(max-width: 1070px) {
                 width: calc($index * 30);

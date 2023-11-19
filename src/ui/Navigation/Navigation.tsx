@@ -1,6 +1,7 @@
 "use client"
 
 import styles from "@/ui/Navigation/Navigation.module.scss"
+import Link from "next/link"
 import { useState } from "react"
 import { MdMenu } from "react-icons/md"
 
@@ -16,10 +17,10 @@ const Navigation = () => {
       </div>
       <div className={styles.col}>
         <ul>
-          <li>home</li>
-          <li>projects</li>
-          <li>about us</li>
-          <li>contacts</li>
+          <Link href={"/#home"}><li>home</li></Link>
+          <Link href={"/#projects"}><li>projects</li></Link>
+          <Link href={"/#about_us"}><li>about us</li></Link>
+          <Link href={"/#contact"}><li>contacts</li></Link>
         </ul>
         <div className={styles.language}>
           <h4>Eng</h4>
@@ -30,10 +31,10 @@ const Navigation = () => {
       </div>
     </div>
     <ul className={styles.mobile}>
-      <li>home</li>
-      <li>projects</li>
-      <li>about us</li>
-      <li>contacts</li>
+      <Link href={"/#home"}><li>home</li></Link>
+      <Link href={"/#projects"}><li>projects</li></Link>
+      <Link href={"/#about_us"}><li>about us</li></Link>
+      <Link href={"/#contact"}><li>contacts</li></Link>
     </ul>
   </nav>
 }

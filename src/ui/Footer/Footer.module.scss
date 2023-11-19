@@ -47,11 +47,13 @@
   ul {
     margin-left: 5vw;
 
-    li {
-      color: #333;
+    a {
+      li {
+        color: #333;
+      }
 
-      &:not(:first-child) {
-        margin-top: 10px;
+      &:not(:last-child) {
+        margin-top: 20px;
       }
     }
 

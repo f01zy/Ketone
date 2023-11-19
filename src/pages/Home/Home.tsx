@@ -1,9 +1,10 @@
 import styles from "@/pages/Home/Home.module.scss"
 import Image from "next/image";
+import Link from "next/link";
 
 const Home = () => {
   return <div className={styles.home}>
-    <header>
+    <header id="home">
       <div className={styles.row}>
         <div className={styles.col}>
           <Image alt="header" src={"/home/header/header.png"} width={458} height={441} />
@@ -14,11 +15,11 @@ const Home = () => {
               <h1>Ketone</h1>
             </div>
             <div className={styles.col_block}>
-              <p>With qipper, You don't have to think about the quality of web content anymore. The qipper project was designed only for those in need of quality and style. We know how to sell and we do it well.</p>
-              <button>Get a discount</button>
+              <p>With ketone, You don't have to think about the quality of web content anymore. The qipper project was designed only for those in need of quality and style. We know how to sell and we do it well.</p>
+              <button><Link href={"/#contact"}>Get a discount</Link></button>
             </div>
             <div className={styles.col_block}>
-              <p>We have been a close-knit team for a long time, we are more than 10 years old. Qipper is our common interest and common goal. Everyone who contacts us receives only positive feedback from their customers. We don't try to please everyone, but we try to open everyone's eyes. Keep track of who you are asking for help.</p>
+              <p>Ketone is our common interest and common goal. Everyone who contacts us receives only positive feedback from their customers. We don't try to please everyone, but we try to open everyone's eyes. Keep track of who you are asking for help.</p>
             </div>
           </div>
           <div className={styles.block}>
@@ -30,14 +31,14 @@ const Home = () => {
         </div>
       </div>
     </header>
-    <div className={styles.two_block}>
+    <div className={styles.two_block} id="about_us">
       <div className={styles.row}>
         <div className={styles.col}>
           <div className={styles.text}>
             <h1>Just do it</h1>
             <h5>...said once a good man</h5>
           </div>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+          <p>With ketone, You don't have to think about the quality of web content anymore. The qipper project was designed only for those in need of quality and style. We know how to sell and we do it well. Ketone is our common interest and common goal. Everyone who contacts us receives only positive feedback from their customers. We don't try to please everyone, but we try to open everyone's eyes. Keep track of who you are asking for help.</p>
         </div>
         <div className={styles.col}>
           <Image src={"/home/two_block/two_block.png"} alt="two_block" width={636} height={415} />
@@ -60,7 +61,7 @@ const Home = () => {
         <Image src={"/home/three_block/three_block_white.png"} alt="image" width={292} height={264} />
       </div>
     </div>
-    <div className={styles.contact}>
+    <div className={styles.contact} id="contact">
       <div className={styles.text}>
         <h1>FILL OUT THE APPLICATION FORM AND WE WILL CALL YOU</h1>
       </div>
